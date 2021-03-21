@@ -1,0 +1,117 @@
+@font-face{
+	font-family: "Open Sans Regular";
+	src: url("fonts/OpenSans-Regular.ttf");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html{
+	font-family: "Open Sans", "arial";
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+body{
+	background-image: linear-gradient(to bottom right, rgb(51, 129, 80), rgb(219, 155, 58), rgb(37, 64, 57));
+}
+
+p{
+	margin: 7px 0;
+	font-size: 15px;
+	text-align: center;
+}
+
+.topo{
+	margin: auto;
+    width: 500px;
+    height: calc(100vh - 20px);
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topo .fota{
+	width: 120px;
+  	margin-bottom: 20px;
+  	margin-top: 20px;
+  	height: 120px;
+  	border-radius: 50%;
+  	object-fit: cover;
+}
+
+.topo .information{
+	margin: 5px 0;
+}
+
+.social{
+	display: flex;
+	width: 40px;
+	height: 40px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #cccccc;
+	border-radius: 100px;
+	position: absolute;
+	top: 250px;
+}
+
+.git{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content{
+	margin-top: 15px;
+	padding: 50px 30px 20px;
+	width: 100%;
+	height: calc(100vh - 20px);
+	color: purple;
+	background-color: white;
+	border-radius: 50px 50px 0 0;
+	overflow: hidden;
+}
+
+.content p{
+	text-align: left;
+}
+
+.video{
+	overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.video iframe{
+	position: absolute;
+ 	width: 100%;
+ 	height: 100%;
+}
+.link{
+	background-color: rgb(37, 64, 57);
+	margin: 15px auto;
+  	width: 100%;
+  	height: 45px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	border: 1px solid #bcbcbc;
+  	border-radius: 16px;
+  	text-decoration: none;
+  	color: rgb(51, 129, 80);
+  	cursor: pointer;
+}
+
+.link:hover{
+	background-color: rgb(70, 25, 28);
+	color: rgb(58, 62, 88);
+}
